@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright (C) 2022
+TETCOS LLP, Banglore, India.
+Author: Veeresh S -->
+
+<MainProperty>
+	<Layer LayerName="Network Logs" LayerType="MAIN_LOGS" IncludeInNetwork="Internetworks" >
+		<Property scope="Local" UIType="LogCheckBox" DataType="STRING"  ConfigName="Select_Network_Logs" DisplayName="Select All" DefaultValue="False" Choices=""
+				     ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				   ExcelSheet="Select_All_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="A2"
+				  ExcelInteraction="Input"
+				  ExcelUniqueKey="selectNet" Description="..\Docs\UI_xml\Param_Desc\LogDescription\SelectAllNetworkLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\SelectAllNetworkLog.rtf" />
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="IEEE_802_11_RADIO_MEASUREMENTS_LOG" DisplayName="IEEE 802.11 Radio Measurements Log" DefaultValue="False"
+				      ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				   ExcelSheet="Select_All_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="B2"
+				  ExcelInteraction="Output"
+				  ExcelUniqueKey="selectNet"
+				  Choices=""  Description="..\Docs\UI_xml\Param_Desc\LogDescription\IEEE802.11RadioMeasurementLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\IEEE802.11RadioMeasurementLog.rtf"/>
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="IEEE802_11_BACKOFF_LOG"  DisplayName="IEEE 802.11 Backoff Log" DefaultValue="False" Choices=""
+				      ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				   ExcelSheet="Select_All_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="C2"
+				  ExcelInteraction="Output"
+				  ExcelUniqueKey="selectNet"
+				  Description="..\Docs\UI_xml\Param_Desc\LogDescription\IEEE802.11BackOffLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\IEEE802.11BackOffLog.rtf"/>
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="IEEE802_11_LOG" DisplayName="IEEE 802.11 Log" DefaultValue="False" Choices=""
+				      ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				   ExcelSheet="Select_All_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="D2"
+				  ExcelInteraction="Output"
+				  ExcelUniqueKey="selectNet"
+				  Description="..\Docs\UI_xml\Param_Desc\LogDescription\IEEE802.11Log.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\IEEE802.11Log.rtf"/>
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="OSPF_LOG" DisplayName="OSPF Log" DefaultValue="False" Choices=""
+				      ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				   ExcelSheet="Select_All_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="E2"
+				  ExcelInteraction="Output"
+				  ExcelUniqueKey="selectNet"
+				  Description="..\Docs\UI_xml\Param_Desc\LogDescription\OSPFLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\OSPFLog.rtf"/>
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="OSPF_HELLO_LOG" DisplayName="OSPF Hello Log" DefaultValue="False" Choices=""
+				      ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				   ExcelSheet="Select_All_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="F2"
+				  ExcelInteraction="Output"
+				  ExcelUniqueKey="selectNet"
+				  Description="..\Docs\UI_xml\Param_Desc\LogDescription\OSPFHelloLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\OSPFHelloLog.rtf"/>
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="TCP_LOG" DisplayName="TCP Log" DefaultValue="False" Choices=""
+				      ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				   ExcelSheet="Select_All_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="G2"
+				  ExcelInteraction="Output"
+				  ExcelUniqueKey="selectNet"
+				  Description="..\Docs\UI_xml\Param_Desc\LogDescription\TCPLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\TCPLog.rtf"/>
+	</Layer>
+
+	<Layer LayerName="Network Logs" LayerType="MAIN_LOGS" IncludeInNetwork="GSM,CDMA">
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="MOBILITY_LOG" DisplayName="Mobility Log" DefaultValue="False" Choices=""
+				  Description="..\Docs\UI_xml\Param_Desc\LogDescription\MobilityLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\MobilityLog.rtf"/>
+	</Layer>
+
+	<Layer LayerName="Network Logs" LayerType="MAIN_LOGS" IncludeInNetwork="Pure_Aloha,Slotted_Aloha">
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="MOBILITY_LOG" DisplayName="Mobility Log" DefaultValue="False" Choices=""
+				  Description="..\Docs\UI_xml\Param_Desc\LogDescription\MobilityLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\MobilityLog.rtf"/>
+	</Layer>
+
+	<Layer LayerName="Additional Logs" LayerType="ADDTIONAL_LOGS" IncludeInNetwork="Pure_Aloha,Slotted_Aloha">
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="TCP_LOG" DisplayName="TCP Log" DefaultValue="False" Choices=""
+				  Description="..\Docs\UI_xml\Param_Desc\LogDescription\TCPLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\TCPLog.rtf"/>
+	</Layer>
+
+	<Layer LayerName="Network Logs" LayerType="MAIN_LOGS" IncludeInNetwork="Mobile_Adhoc_Networks">
+		<Property scope="Local" UIType="LogCheckBox" DataType="STRING"  ConfigName="Select_Network_Logs" DisplayName="Select All" DefaultValue="False" Choices=""
+				      ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				   ExcelSheet="Select_All_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="A2"
+				  ExcelInteraction="Input"
+				  ExcelUniqueKey="selectNet" Description="..\Docs\UI_xml\Param_Desc\LogDescription\SelectAllNetworkLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\SelectAllNetworkLog.rtf" />
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="IEEE_802_11_RADIO_MEASUREMENTS_LOG" DisplayName="IEEE 802.11 Radio Measurements Log" DefaultValue="False" Choices=""
+				       ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				   ExcelSheet="Select_All_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="B2"
+				  ExcelInteraction="Output"
+				  ExcelUniqueKey="selectNet"
+				  Description="..\Docs\UI_xml\Param_Desc\LogDescription\IEEE802.11RadioMeasurementLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\IEEE802.11RadioMeasurementLog.rtf"/>
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="IEEE802_11_BACKOFF_LOG"  DisplayName="IEEE 802.11 Backoff Log" DefaultValue="False" Choices=""
+				      ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				   ExcelSheet="Select_All_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="C2"
+				  ExcelInteraction="Output"
+				  ExcelUniqueKey="selectNet"
+				  Description="..\Docs\UI_xml\Param_Desc\LogDescription\IEEE802.11BackOffLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\IEEE802.11BackOffLog.rtf"/>
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="IEEE802_11_LOG" DisplayName="IEEE 802.11 Log" DefaultValue="False" Choices=""
+				      ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				   ExcelSheet="Select_All_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="D2"
+				  ExcelInteraction="Output"
+				  ExcelUniqueKey="selectNet"
+				  Description="..\Docs\UI_xml\Param_Desc\LogDescription\IEEE802.11Log.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\IEEE802.11Log.rtf"/>
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="MOBILITY_LOG" DisplayName="Mobility Log" DefaultValue="False" Choices=""
+				      ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				   ExcelSheet="Select_All_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="H2"
+				  ExcelInteraction="Output"
+				  ExcelUniqueKey="selectNet"
+				  Description="..\Docs\UI_xml\Param_Desc\LogDescription\MobilityLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\MobilityLog.rtf"/>
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="ENERGY_LOG" DisplayName="Energy Log" DefaultValue="False" Choices=""
+				      ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				   ExcelSheet="Select_All_Logs" ExcelRow="20" ExcelColumn="11" ExcelCell="S2"
+				  ExcelInteraction="Output"
+				  ExcelUniqueKey="selectNet"
+				  Description="..\Docs\UI_xml\Param_Desc\LogDescription\EnergyLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\EnergyLog.rtf"/>
+	</Layer>
+
+	<Layer LayerName="Additional Logs" LayerType="ADDTIONAL_LOGS" IncludeInNetwork="Mobile_Adhoc_Networks">
+		<Property scope="Local" UIType="LogCheckBox" DataType="STRING"  ConfigName="Select_Add_Logs" DisplayName="Select All" DefaultValue="False" Choices=""
+				     ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				  ExcelSheet="Additional_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="A2"
+				  ExcelInteraction="Input"
+				  ExcelUniqueKey="selectAddtionalLogs" Description="..\Docs\UI_xml\Param_Desc\LogDescription\SelectAllAdditionalLogs.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\SelectAllAdditionalLogs.rtf" />
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="OSPF_LOG" DisplayName="OSPF Log" DefaultValue="False" Choices=""
+				      ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				  ExcelSheet="Additional_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="B2"
+				  ExcelInteraction="Output"
+				  ExcelUniqueKey="selectAddtionalLogs"
+				  Description="..\Docs\UI_xml\Param_Desc\LogDescription\OSPFLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\OSPFLog.rtf"/>
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="OSPF_HELLO_LOG" DisplayName="OSPF Hello Log" DefaultValue="False" Choices=""
+				     ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				  ExcelSheet="Additional_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="C2"
+				  ExcelInteraction="Output"
+				  ExcelUniqueKey="selectAddtionalLogs"
+				  Description="..\Docs\UI_xml\Param_Desc\LogDescription\OSPFHelloLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\OSPFHelloLog.rtf"/>
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="TCP_LOG" DisplayName="TCP Log" DefaultValue="False" Choices=""
+				     ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				  ExcelSheet="Additional_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="D2"
+				  ExcelInteraction="Output"
+				  ExcelUniqueKey="selectAddtionalLogs"
+				  Description="..\Docs\UI_xml\Param_Desc\LogDescription\TCPLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\TCPLog.rtf"/>
+	</Layer>
+
+	<Layer LayerName="Network Logs" LayerType="MAIN_LOGS" IncludeInNetwork="Wsn">
+		<Property scope="Local" UIType="LogCheckBox" DataType="STRING"  ConfigName="Select_Network_Logs" DisplayName="Select All" DefaultValue="False" Choices=""
+				      ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				   ExcelSheet="Select_All_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="A2"
+				  ExcelInteraction="Input"
+				  ExcelUniqueKey="selectNet" Description="..\Docs\UI_xml\Param_Desc\LogDescription\SelectAllNetworkLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\SelectAllNetworkLog.rtf" />
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="IEEE802_15_4_RADIO_MEASUREMENTS_LOG" DisplayName="IEEE 802.15.4 Radio Measurements Log" DefaultValue="False" Choices=""
+				       ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				   ExcelSheet="Select_All_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="T2"
+				  ExcelInteraction="Output"
+				  ExcelUniqueKey="selectNet"
+				  Description="..\Docs\UI_xml\Param_Desc\LogDescription\IEEE802.11RadioMeasurementLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\IEEE802.11RadioMeasurementLog.rtf"/>
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="MOBILITY_LOG" DisplayName="Mobility Log" DefaultValue="False" Choices=""
+				      ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				   ExcelSheet="Select_All_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="H2"
+				  ExcelInteraction="Output"
+				  ExcelUniqueKey="selectNet"
+				  Description="..\Docs\UI_xml\Param_Desc\LogDescription\MobilityLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\MobilityLog.rtf"/>
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="ENERGY_LOG" DisplayName="Energy Log" DefaultValue="False" Choices=""
+				  ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+			   ExcelSheet="Select_All_Logs" ExcelRow="20" ExcelColumn="11" ExcelCell="S2"
+			  ExcelInteraction="Output"
+			  ExcelUniqueKey="selectNet"
+			  Description="..\Docs\UI_xml\Param_Desc\LogDescription\EnergyLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\EnergyLog.rtf"/>
+	</Layer>
+
+	<Layer LayerName="Additional Logs" LayerType="ADDITIONAL_LOGS" IncludeInNetwork="Wsn">
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="TCP_LOG" DisplayName="TCP Log" DefaultValue="False" Choices=""
+				  Description="..\Docs\UI_xml\Param_Desc\LogDescription\TCPLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\TCPLog.rtf"/>
+	</Layer>
+
+	<Layer LayerName="Network Logs" LayerType="MAIN_LOGS" IncludeInNetwork="Internet_of_Things">
+		<Property scope="Local" UIType="LogCheckBox" DataType="STRING"  ConfigName="Select_Network_Logs" DisplayName="Select All" DefaultValue="False" Choices=""
+				      ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				   ExcelSheet="Select_All_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="A2"
+				  ExcelInteraction="Input"
+				  ExcelUniqueKey="selectNet" Description="..\Docs\UI_xml\Param_Desc\LogDescription\SelectAllNetworkLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\SelectAllNetworkLog.rtf" />
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="IEEE802_15_4_RADIO_MEASUREMENTS_LOG" DisplayName="IEEE 802.15.4 Radio Measurements Log" DefaultValue="False" Choices=""
+				      ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				   ExcelSheet="Select_All_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="T2"
+				  ExcelInteraction="Output"
+				  ExcelUniqueKey="selectNet"
+				  Description="..\Docs\UI_xml\Param_Desc\LogDescription\IEEE802.11RadioMeasurementLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\IEEE802.11RadioMeasurementLog.rtf"/>
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="MOBILITY_LOG" DisplayName="Mobility Log" DefaultValue="False" Choices=""
+				      ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				   ExcelSheet="Select_All_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="H2"
+				  ExcelInteraction="Output"
+				  ExcelUniqueKey="selectNet"
+				  Description="..\Docs\UI_xml\Param_Desc\LogDescription\MobilityLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\MobilityLog.rtf"/>
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="ENERGY_LOG" DisplayName="Energy Log" DefaultValue="False" Choices=""
+				  ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+			   ExcelSheet="Select_All_Logs" ExcelRow="20" ExcelColumn="11" ExcelCell="S2"
+			  ExcelInteraction="Output"
+			  ExcelUniqueKey="selectNet"
+			  Description="..\Docs\UI_xml\Param_Desc\LogDescription\EnergyLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\EnergyLog.rtf"/>
+	</Layer>
+
+	<Layer LayerName="Additional Logs" LayerType="ADDITIONAL_LOGS" IncludeInNetwork="Internet_of_Things">
+		<Property scope="Local" UIType="LogCheckBox" DataType="STRING"  ConfigName="Select_Add_Logs" DisplayName="Select All" DefaultValue="False" Choices=""
+				      ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				  ExcelSheet="Additional_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="A2"
+				  ExcelInteraction="Input"
+				  ExcelUniqueKey="selectNet" Description="..\Docs\UI_xml\Param_Desc\LogDescription\SelectAllAdditionalLogs.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\SelectAllAdditionalLogs.rtf" />
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="IEEE_802_11_RADIO_MEASUREMENTS_LOG" DisplayName="IEEE 802.11 Radio Measurements Log" DefaultValue="False" Choices=""
+				       ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				  ExcelSheet="Additional_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="E2"
+				  ExcelInteraction="Output"
+				  ExcelUniqueKey="selectNet"
+				  Description="..\Docs\UI_xml\Param_Desc\LogDescription\IEEE802.11RadioMeasurementLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\IEEE802.11RadioMeasurementLog.rtf"/>
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="IEEE802_11_BACKOFF_LOG"  DisplayName="IEEE 802.11 Backoff Log" DefaultValue="False" Choices=""
+				     ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				  ExcelSheet="Additional_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="F2"
+				  ExcelInteraction="Output"
+				  ExcelUniqueKey="selectNet"
+				  Description="..\Docs\UI_xml\Param_Desc\LogDescription\IEEE802.11BackOffLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\IEEE802.11BackOffLog.rtf"/>
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="IEEE802_11_LOG" DisplayName="IEEE 802.11 Log" DefaultValue="False" Choices=""
+				      ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				  ExcelSheet="Additional_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="G2"
+				  ExcelInteraction="Output"
+				  ExcelUniqueKey="selectNet"
+				  Description="..\Docs\UI_xml\Param_Desc\LogDescription\IEEE802.11Log.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\IEEE802.11Log.rtf"/>
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="OSPF_LOG" DisplayName="OSPF Log" DefaultValue="False" Choices=""
+				       ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				  ExcelSheet="Additional_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="B2"
+				  ExcelInteraction="Output"
+				  ExcelUniqueKey="selectNet"
+				  Description="..\Docs\UI_xml\Param_Desc\LogDescription\OSPFLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\OSPFLog.rtf"/>
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="OSPF_HELLO_LOG" DisplayName="OSPF Hello Log" DefaultValue="False" Choices=""
+				      ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				  ExcelSheet="Additional_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="C2"
+				  ExcelInteraction="Output"
+				  ExcelUniqueKey="selectNet"
+				  Description="..\Docs\UI_xml\Param_Desc\LogDescription\OSPFHelloLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\OSPFHelloLog.rtf"/>
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="TCP_LOG" DisplayName="TCP Log" DefaultValue="False" Choices=""
+				      ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				  ExcelSheet="Additional_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="D2"
+				  ExcelInteraction="Output"
+				  ExcelUniqueKey="selectNet"
+				  Description="..\Docs\UI_xml\Param_Desc\LogDescription\TCPLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\TCPLog.rtf"/>
+	</Layer>
+
+	<Layer LayerName="Additional Logs" LayerType="ADDITIONAL_LOGS" IncludeInNetwork="Cognitive_Radio_Networks">
+		<Property scope="Local" UIType="LogCheckBox" DataType="STRING"  ConfigName="Select_Add_Logs" DisplayName="Select All" DefaultValue="False" Choices=""
+				     ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				  ExcelSheet="Additional_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="A2"
+				  ExcelInteraction="Input"
+				  ExcelUniqueKey="selectNet" Description="..\Docs\UI_xml\Param_Desc\LogDescription\SelectAllAdditionalLogs.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\SelectAllAdditionalLogs.rtf" />
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="IEEE_802_11_RADIO_MEASUREMENTS_LOG" DisplayName="IEEE 802.11 Radio Measurements Log" DefaultValue="False" Choices=""
+				      ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				  ExcelSheet="Additional_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="E2"
+				  ExcelInteraction="Output"
+				  ExcelUniqueKey="selectNet"
+				  Description="..\Docs\UI_xml\Param_Desc\LogDescription\IEEE802.11RadioMeasurementLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\IEEE802.11RadioMeasurementLog.rtf"/>
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="OSPF_LOG" DisplayName="OSPF Log" DefaultValue="False" Choices=""
+				      ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				  ExcelSheet="Additional_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="B2"
+				  ExcelInteraction="Output"
+				  ExcelUniqueKey="selectNet"
+				  Description="..\Docs\UI_xml\Param_Desc\LogDescription\OSPFLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\OSPFLog.rtf"/>
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="OSPF_HELLO_LOG" DisplayName="OSPF Hello Log" DefaultValue="False" Choices=""
+				     ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				  ExcelSheet="Additional_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="C2"
+				  ExcelInteraction="Output"
+				  ExcelUniqueKey="selectNet"
+				  Description="..\Docs\UI_xml\Param_Desc\LogDescription\OSPFHelloLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\OSPFHelloLog.rtf"/>
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="TCP_LOG" DisplayName="TCP Log" DefaultValue="False" Choices=""
+				     ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				  ExcelSheet="Additional_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="D2"
+				  ExcelInteraction="Output"
+				  ExcelUniqueKey="selectNet"
+				  Description="..\Docs\UI_xml\Param_Desc\LogDescription\TCPLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\TCPLog.rtf"/>
+	</Layer>
+
+	<Layer LayerName="Network Logs" LayerType="MAIN_LOGS" IncludeInNetwork="5G_NR_mmWave,5G_NR_NSA_OPTION_3,5G_NR_NSA_OPTION_3A,5G_NR_NSA_OPTION_4,5G_NR_NSA_OPTION_4A,5G_NR_NSA_OPTION_7,5G_NR_NSA_OPTION_7A">
+		<Property scope="Local" UIType="LogCheckBox" DataType="STRING"  ConfigName="Select_Network_Logs" DisplayName="Select All" DefaultValue="False" Choices=""
+				      ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				   ExcelSheet="Select_All_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="A2"
+				  ExcelInteraction="Input"
+				  ExcelUniqueKey="selectNet" Description="..\Docs\UI_xml\Param_Desc\LogDescription\SelectAllNetworkLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\SelectAllNetworkLog.rtf" />
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="LTENR_Radio_Measurements_Log" DisplayName="LTENR Radio Measurements Log" DefaultValue="False" Choices=""
+				      ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				   ExcelSheet="Select_All_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="I2"
+				  ExcelInteraction="Output"
+				  ExcelUniqueKey="selectNet"
+				  Description="..\Docs\UI_xml\Param_Desc\LogDescription\LTENRRadioMeasurementLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\LTENRRadioMeasurementLog.rtf"/>
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="LTENR_Radio_Resource_Allocation" DisplayName="LTENR Resource Allocation Log" DefaultValue="False" Choices=""
+				      ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				   ExcelSheet="Select_All_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="J2"
+				  ExcelInteraction="Output"
+				  ExcelUniqueKey="selectNet"
+				  Description="..\Docs\UI_xml\Param_Desc\LogDescription\LTENRResourceAllocationLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\LTENRResourceAllocationLog.rtf"/>
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="LTENR_HANDOVER_LOG" DisplayName="LTENR Handover Log" DefaultValue="False" Choices=""
+				      ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				   ExcelSheet="Select_All_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="K2"
+				  ExcelInteraction="Output"
+				  ExcelUniqueKey="selectNet"
+				  Description="..\Docs\UI_xml\Param_Desc\LogDescription\LTENRHandoverTTTLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\LTENRHandoverTTTLog.rtf"/>
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="LTENR_CODEBLOCK_LOG" DisplayName="LTENR Code Block Log" DefaultValue="False" Choices=""
+				      ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				   ExcelSheet="Select_All_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="L2"
+				  ExcelInteraction="Output"
+				  ExcelUniqueKey="selectNet"
+				  Description="..\Docs\UI_xml\Param_Desc\LogDescription\LTENRCodeBlockLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\LTENRCodeBlockLog.rtf"/>
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="LTENR_OLLA_LOG" DisplayName="LTENR OLLA Log" DefaultValue="False" Choices=""
+				     ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				   ExcelSheet="Select_All_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="M2"
+				  ExcelInteraction="Output"
+				  ExcelUniqueKey="selectNet"
+				  Description="..\Docs\UI_xml\Param_Desc\LogDescription\OLLAlogs.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\OLLAlogs.rtf"/>
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="MOBILITY_LOG" DisplayName="Mobility Log" DefaultValue="False" Choices=""
+				       ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				   ExcelSheet="Select_All_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="H2"
+				  ExcelInteraction="Output"
+				  ExcelUniqueKey="selectNet"
+				  Description="..\Docs\UI_xml\Param_Desc\LogDescription\MobilityLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\MobilityLog.rtf"/>
+	</Layer>
+
+	<Layer LayerName="Additional Logs" LayerType="ADDITIONAL_LOGS" IncludeInNetwork="5G_NR_mmWave,5G_NR_NSA_OPTION_3,5G_NR_NSA_OPTION_3A,5G_NR_NSA_OPTION_4,5G_NR_NSA_OPTION_4A,5G_NR_NSA_OPTION_7,5G_NR_NSA_OPTION_7A">
+		<Property scope="Local" UIType="LogCheckBox" DataType="STRING"  ConfigName="Select_Add_Logs" DisplayName="Select All" DefaultValue="False" Choices=""
+				     ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				  ExcelSheet="Additional_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="A2"
+				  ExcelInteraction="Input"
+				  ExcelUniqueKey="selectNet" Description="..\Docs\UI_xml\Param_Desc\LogDescription\SelectAllAdditionalLogs.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\SelectAllAdditionalLogs.rtf" />
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="IEEE_802_11_RADIO_MEASUREMENTS_LOG" DisplayName="IEEE 802.11 Radio Measurements Log" DefaultValue="False" Choices=""
+				      ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				  ExcelSheet="Additional_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="E2"
+				  ExcelInteraction="Output"
+				  ExcelUniqueKey="selectNet"
+				  Description="..\Docs\UI_xml\Param_Desc\LogDescription\IEEE802.11RadioMeasurementLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\IEEE802.11RadioMeasurementLog.rtf"/>
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="IEEE802_11_BACKOFF_LOG"  DisplayName="IEEE 802.11 Backoff Log" DefaultValue="False" Choices=""
+				     ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				  ExcelSheet="Additional_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="F2"
+				  ExcelInteraction="Output"
+				  ExcelUniqueKey="selectNet"
+				  Description="..\Docs\UI_xml\Param_Desc\LogDescription\IEEE802.11BackOffLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\IEEE802.11BackOffLog.rtf"/>
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="IEEE802_11_LOG" DisplayName="IEEE 802.11 Log" DefaultValue="False" Choices=""
+				     ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				  ExcelSheet="Additional_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="G2"
+				  ExcelInteraction="Output"
+				  ExcelUniqueKey="selectNet"
+				  Description="..\Docs\UI_xml\Param_Desc\LogDescription\IEEE802.11Log.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\IEEE802.11Log.rtf"/>
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="OSPF_LOG" DisplayName="OSPF Log" DefaultValue="False" Choices=""
+				      ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				  ExcelSheet="Additional_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="B2"
+				  ExcelInteraction="Output"
+				  ExcelUniqueKey="selectNet"
+				  Description="..\Docs\UI_xml\Param_Desc\LogDescription\OSPFLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\OSPFLog.rtf"/>
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="OSPF_HELLO_LOG" DisplayName="OSPF Hello Log" DefaultValue="False" Choices=""
+				     ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				  ExcelSheet="Additional_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="C2"
+				  ExcelInteraction="Output"
+				  ExcelUniqueKey="selectNet"
+				  Description="..\Docs\UI_xml\Param_Desc\LogDescription\OSPFHelloLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\OSPFHelloLog.rtf"/>
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="TCP_LOG" DisplayName="TCP Log" DefaultValue="False" Choices=""
+				     ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				  ExcelSheet="Additional_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="D2"
+				  ExcelInteraction="Output"
+				  ExcelUniqueKey="selectNet"
+				  Description="..\Docs\UI_xml\Param_Desc\LogDescription\TCPLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\TCPLog.rtf"/>
+	</Layer>
+
+	<Layer LayerName="Network Logs" LayerType="MAIN_LOGS" IncludeInNetwork="LTE">
+		<Property scope="Local" UIType="LogCheckBox" DataType="STRING"  ConfigName="Select_Network_Logs" DisplayName="Select All" DefaultValue="False" Choices=""
+				      ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				   ExcelSheet="Select_All_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="A2"
+				  ExcelInteraction="Input"
+				  ExcelUniqueKey="selectNet" Description="..\Docs\UI_xml\Param_Desc\LogDescription\SelectAllNetworkLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\SelectAllNetworkLog.rtf" />
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="LTENR_Radio_Measurements_Log" DisplayName="LTENR Radio Measurements Log" DefaultValue="False" Choices=""
+				      ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				   ExcelSheet="Select_All_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="I2"
+				  ExcelInteraction="Output"
+				  ExcelUniqueKey="selectNet"
+				  Description="..\Docs\UI_xml\Param_Desc\LogDescription\LTENRRadioMeasurementLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\LTENRRadioMeasurementLog.rtf"/>
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="LTENR_Radio_Resource_Allocation" DisplayName="LTENR Resource Allocation Log" DefaultValue="False" Choices=""
+				      ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				   ExcelSheet="Select_All_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="J2"
+				  ExcelInteraction="Output"
+				  ExcelUniqueKey="selectNet"
+				  Description="..\Docs\UI_xml\Param_Desc\LogDescription\LTENRResourceAllocationLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\LTENRResourceAllocationLog.rtf"/>
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="LTENR_HANDOVER_LOG" DisplayName="LTENR Handover Log" DefaultValue="False" Choices=""
+				      ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				   ExcelSheet="Select_All_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="K2"
+				  ExcelInteraction="Output"
+				  ExcelUniqueKey="selectNet"
+				  Description="..\Docs\UI_xml\Param_Desc\LogDescription\LTENRHandoverTTTLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\LTENRHandoverTTTLog.rtf"/>
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="LTENR_CODEBLOCK_LOG" DisplayName="LTENR Code Block Log" DefaultValue="False" Choices=""
+				      ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				   ExcelSheet="Select_All_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="L2"
+				  ExcelInteraction="Output"
+				  ExcelUniqueKey="selectNet"
+				  Description="..\Docs\UI_xml\Param_Desc\LogDescription\LTENRCodeBlockLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\LTENRCodeBlockLog.rtf"/>
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="LTENR_OLLA_LOG" DisplayName="LTENR OLLA Log" DefaultValue="False" Choices=""
+				      ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				   ExcelSheet="Select_All_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="M2"
+				  ExcelInteraction="Output"
+				  ExcelUniqueKey="selectNet"
+				  Description="..\Docs\UI_xml\Param_Desc\LogDescription\OLLAlogs.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\OLLAlogs.rtf"/>
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="MOBILITY_LOG" DisplayName="Mobility Log" DefaultValue="False" Choices=""
+				      ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				   ExcelSheet="Select_All_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="H2"
+				  ExcelInteraction="Output"
+				  ExcelUniqueKey="selectNet"
+				  Description="..\Docs\UI_xml\Param_Desc\LogDescription\MobilityLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\MobilityLog.rtf"/>
+	</Layer>
+
+	<Layer LayerName="Additional Logs" LayerType="ADDITIONAL_LOGS" IncludeInNetwork="LTE">
+		<Property scope="Local" UIType="LogCheckBox" DataType="STRING"  ConfigName="Select_Add_Logs" DisplayName="Select All" DefaultValue="False" Choices=""
+				     ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				  ExcelSheet="Additional_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="A2"
+				  ExcelInteraction="Input"
+				  ExcelUniqueKey="selectNet" Description="..\Docs\UI_xml\Param_Desc\LogDescription\SelectAllAdditionalLogs.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\SelectAllAdditionalLogs.rtf" />
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="IEEE_802_11_RADIO_MEASUREMENTS_LOG" DisplayName="IEEE 802.11 Radio Measurements Log" DefaultValue="False" Choices=""
+				      ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				  ExcelSheet="Additional_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="E2"
+				  ExcelInteraction="Output"
+				  ExcelUniqueKey="selectNet"
+				  Description="..\Docs\UI_xml\Param_Desc\LogDescription\IEEE802.11RadioMeasurementLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\IEEE802.11RadioMeasurementLog.rtf"/>
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="IEEE802_11_BACKOFF_LOG"  DisplayName="IEEE 802.11 Backoff Log" DefaultValue="False" Choices=""
+				     ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				  ExcelSheet="Additional_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="F2"
+				  ExcelInteraction="Output"
+				  ExcelUniqueKey="selectNet"
+				  Description="..\Docs\UI_xml\Param_Desc\LogDescription\IEEE802.11BackOffLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\IEEE802.11BackOffLog.rtf"/>
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="IEEE802_11_LOG" DisplayName="IEEE 802.11 Log" DefaultValue="False" Choices=""
+				     ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				  ExcelSheet="Additional_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="G2"
+				  ExcelInteraction="Output"
+				  ExcelUniqueKey="selectNet"
+				  Description="..\Docs\UI_xml\Param_Desc\LogDescription\IEEE802.11Log.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\IEEE802.11Log.rtf"/>
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="OSPF_LOG" DisplayName="OSPF Log" DefaultValue="False" Choices=""
+				      ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				  ExcelSheet="Additional_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="B2"
+				  ExcelInteraction="Output"
+				  ExcelUniqueKey="selectNet"
+				  Description="..\Docs\UI_xml\Param_Desc\LogDescription\OSPFLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\OSPFLog.rtf"/>
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="OSPF_HELLO_LOG" DisplayName="OSPF Hello Log" DefaultValue="False" Choices=""
+				     ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				  ExcelSheet="Additional_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="C2"
+				  ExcelInteraction="Output"
+				  ExcelUniqueKey="selectNet"
+				  Description="..\Docs\UI_xml\Param_Desc\LogDescription\OSPFHelloLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\OSPFHelloLog.rtf"/>
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="TCP_LOG" DisplayName="TCP Log" DefaultValue="False" Choices=""
+				     ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				  ExcelSheet="Additional_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="D2"
+				  ExcelInteraction="Output"
+				  ExcelUniqueKey="selectNet"
+				  Description="..\Docs\UI_xml\Param_Desc\LogDescription\TCPLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\TCPLog.rtf"/>
+	</Layer>
+
+	<Layer LayerName="Network Logs" LayerType="MAIN_LOGS" IncludeInNetwork="VANET">
+		<Property scope="Local" UIType="LogCheckBox" DataType="STRING"  ConfigName="Select_Network_Logs" DisplayName="Select All" DefaultValue="False" Choices=""
+				      ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				   ExcelSheet="Select_All_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="A2"
+				  ExcelInteraction="Input"
+				  ExcelUniqueKey="selectNet" Description="..\Docs\UI_xml\Param_Desc\LogDescription\SelectAllNetworkLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\SelectAllNetworkLog.rtf" />
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="IEEE_802_11_RADIO_MEASUREMENTS_LOG" DisplayName="IEEE 802.11 Radio Measurements Log" DefaultValue="False" Choices=""
+				       ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				   ExcelSheet="Select_All_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="E2"
+				  ExcelInteraction="Output"
+				  ExcelUniqueKey="selectNet"
+				  Description="..\Docs\UI_xml\Param_Desc\LogDescription\IEEE802.11RadioMeasurementLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\IEEE802.11RadioMeasurementLog.rtf"/>
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="IEEE802_11_BACKOFF_LOG"  DisplayName="IEEE 802.11 Backoff Log" DefaultValue="False" Choices=""
+				      ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				   ExcelSheet="Select_All_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="F2"
+				  ExcelInteraction="Output"
+				  ExcelUniqueKey="selectNet"
+				  Description="..\Docs\UI_xml\Param_Desc\LogDescription\IEEE802.11BackOffLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\IEEE802.11BackOffLog.rtf"/>
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="IEEE802_11_LOG" DisplayName="IEEE 802.11 Log" DefaultValue="False" Choices=""
+				      ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				   ExcelSheet="Select_All_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="G2"
+				  ExcelInteraction="Output"
+				  ExcelUniqueKey="selectNet"
+				  Description="..\Docs\UI_xml\Param_Desc\LogDescription\IEEE802.11Log.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\IEEE802.11Log.rtf"/>
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="MOBILITY_LOG" DisplayName="Mobility Log" DefaultValue="False" Choices=""
+				      ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				   ExcelSheet="Select_All_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="H2"
+				  ExcelInteraction="Output"
+				  ExcelUniqueKey="selectNet"
+				  Description="..\Docs\UI_xml\Param_Desc\LogDescription\MobilityLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\MobilityLog.rtf"/>
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="ENERGY_LOG" DisplayName="Energy Log" DefaultValue="False" Choices=""
+				  ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+			   ExcelSheet="Select_All_Logs" ExcelRow="20" ExcelColumn="11" ExcelCell="S2"
+			  ExcelInteraction="Output"
+			  ExcelUniqueKey="selectNet"
+			  Description="..\Docs\UI_xml\Param_Desc\LogDescription\EnergyLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\EnergyLog.rtf"/>
+	</Layer>
+
+	<Layer LayerName="Additional Logs" LayerType="ADDITIONAL_LOGS" IncludeInNetwork="VANET">
+		<Property scope="Local" UIType="LogCheckBox" DataType="STRING"  ConfigName="Select_Add_Logs" DisplayName="Select All" DefaultValue="False" Choices=""
+				     ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				  ExcelSheet="Additional_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="A2"
+				  ExcelInteraction="Input"
+				  ExcelUniqueKey="selectNet" Description="..\Docs\UI_xml\Param_Desc\LogDescription\SelectAllAdditionalLogs.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\SelectAllAdditionalLogs.rtf" />
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="OSPF_LOG" DisplayName="OSPF Log" DefaultValue="False" Choices=""
+				      ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				  ExcelSheet="Additional_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="B2"
+				  ExcelInteraction="Output"
+				  ExcelUniqueKey="selectNet"
+				  Description="..\Docs\UI_xml\Param_Desc\LogDescription\OSPFLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\OSPFLog.rtf"/>
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="OSPF_HELLO_LOG" DisplayName="OSPF Hello Log" DefaultValue="False" Choices=""
+				     ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				  ExcelSheet="Additional_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="C2"
+				  ExcelInteraction="Output"
+				  ExcelUniqueKey="selectNet"
+				  Description="..\Docs\UI_xml\Param_Desc\LogDescription\OSPFHelloLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\OSPFHelloLog.rtf"/>
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="TCP_LOG" DisplayName="TCP Log" DefaultValue="False" Choices=""
+				     ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				  ExcelSheet="Additional_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="D2"
+				  ExcelInteraction="Output"
+				  ExcelUniqueKey="selectNet"
+				  Description="..\Docs\UI_xml\Param_Desc\LogDescription\TCPLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\TCPLog.rtf"/>
+	</Layer>
+
+	<Layer LayerName="Network Logs" LayerType="MAIN_LOGS" IncludeInNetwork="Satellite_Communication_Networks">
+		<Property scope="Local" UIType="LogCheckBox" DataType="STRING"  ConfigName="Select_Netwoks_Logs" DisplayName="Select All" DefaultValue="False" Choices=""
+				      ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				   ExcelSheet="Select_All_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="A2"
+				  ExcelInteraction="Input"
+				  ExcelUniqueKey="selectNet" Description="..\Docs\UI_xml\Param_Desc\LogDescription\SelectAllNetworkLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\SelectAllNetworkLog.rtf" />
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="SATELLITE_LOG" DisplayName="Satellite Log" DefaultValue="False" Choices=""
+				      ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				   ExcelSheet="Select_All_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="N2"
+				  ExcelInteraction="Output"
+				  ExcelUniqueKey="selectNet"
+				  Description="..\Docs\UI_xml\Param_Desc\LogDescription\SatelliteLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\SatelliteLog.rtf"/>
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="SATELLITE_PROPAGATION_LOG" DisplayName="Satellite Propagation Log" DefaultValue="False" Choices=""
+				      ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				   ExcelSheet="Select_All_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="O2"
+				  ExcelInteraction="Output"
+				  ExcelUniqueKey="selectNet"
+				  Description="..\Docs\UI_xml\Param_Desc\LogDescription\SatellitePropagationLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\SatellitePropagationLog.rtf"/>
+	</Layer>
+
+	<Layer LayerName="Additional Logs" LayerType="ADDITIONAL_LOGS" IncludeInNetwork="Satellite_Communication_Networks">
+		<Property scope="Local" UIType="LogCheckBox" DataType="STRING"  ConfigName="Select_Add_Logs" DisplayName="Select All" DefaultValue="False" Choices=""
+				     ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				  ExcelSheet="Additional_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="A2"
+				  ExcelInteraction="Input"
+				  ExcelUniqueKey="selectNet" Description="..\Docs\UI_xml\Param_Desc\LogDescription\SelectAllAdditionalLogs.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\SelectAllAdditionalLogs.rtf" />
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="IEEE_802_11_RADIO_MEASUREMENTS_LOG" DisplayName="IEEE 802.11 Radio Measurements Log" DefaultValue="False" Choices=""
+				      ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				  ExcelSheet="Additional_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="E2"
+				  ExcelInteraction="Output"
+				  ExcelUniqueKey="selectNet"
+				  Description="..\Docs\UI_xml\Param_Desc\LogDescription\IEEE802.11RadioMeasurementLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\IEEE802.11RadioMeasurementLog.rtf"/>
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="IEEE802_11_BACKOFF_LOG"  DisplayName="IEEE 802.11 Backoff Log" DefaultValue="False" Choices=""
+				     ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				  ExcelSheet="Additional_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="F2"
+				  ExcelInteraction="Output"
+				  ExcelUniqueKey="selectNet"
+				  Description="..\Docs\UI_xml\Param_Desc\LogDescription\IEEE802.11BackOffLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\IEEE802.11BackOffLog.rtf"/>
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="IEEE802_11_LOG" DisplayName="IEEE 802.11 Log" DefaultValue="False" Choices=""
+				     ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				  ExcelSheet="Additional_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="G2"
+				  ExcelInteraction="Output"
+				  ExcelUniqueKey="selectNet"
+				  Description="..\Docs\UI_xml\Param_Desc\LogDescription\IEEE802.11Log.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\IEEE802.11Log.rtf"/>
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="OSPF_LOG" DisplayName="OSPF Log" DefaultValue="False" Choices=""
+				      ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				  ExcelSheet="Additional_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="B2"
+				  ExcelInteraction="Output"
+				  ExcelUniqueKey="selectNet"
+				  Description="..\Docs\UI_xml\Param_Desc\LogDescription\OSPFLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\OSPFLog.rtf"/>
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="OSPF_HELLO_LOG" DisplayName="OSPF Hello Log" DefaultValue="False" Choices=""
+				     ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				  ExcelSheet="Additional_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="C2"
+				  ExcelInteraction="Output"
+				  ExcelUniqueKey="selectNet"
+				  Description="..\Docs\UI_xml\Param_Desc\LogDescription\OSPFHelloLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\OSPFHelloLog.rtf"/>
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="TCP_LOG" DisplayName="TCP Log" DefaultValue="False" Choices=""
+				     ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				  ExcelSheet="Additional_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="D2"
+				  ExcelInteraction="Output"
+				  ExcelUniqueKey="selectNet"
+				  Description="..\Docs\UI_xml\Param_Desc\LogDescription\TCPLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\TCPLog.rtf"/>
+	</Layer>
+
+	<Layer LayerName="Network Logs" LayerType="MAIN_LOGS" IncludeInNetwork="UWAN">
+		<Property scope="Local" UIType="LogCheckBox" DataType="STRING"  ConfigName="Select_Network_Logs" DisplayName="Select All" DefaultValue="False" Choices=""
+				      ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				   ExcelSheet="Select_All_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="A2"
+				  ExcelInteraction="Input"
+				  ExcelUniqueKey="selectNet" Description="..\Docs\UI_xml\Param_Desc\LogDescription\SelectAllNetworkLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\SelectAllNetworkLog.rtf" />
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="ACOUSTIC_MEASUREMENTS_LOG" DisplayName="Acoustic Measurements Log" DefaultValue="False" Choices=""
+				      ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				   ExcelSheet="Select_All_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="R2"
+				  ExcelInteraction="Output"
+				  ExcelUniqueKey="selectNet"
+				  Description="..\Docs\UI_xml\Param_Desc\LogDescription\AcousticMeasurementLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\AcousticMeasurementLog.rtf"/>
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="MOBILITY_LOG" DisplayName="Mobility Log" DefaultValue="False" Choices=""
+				       ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				   ExcelSheet="Select_All_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="H2"
+				  ExcelInteraction="Output"
+				  ExcelUniqueKey="selectNet"
+				  Description="..\Docs\UI_xml\Param_Desc\LogDescription\MobilityLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\MobilityLog.rtf"/>
+	  <Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="DBR_LOG" DisplayName="DBR Log" DefaultValue="False" Choices=""
+	       ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+	   ExcelSheet="Select_All_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="U2"
+	  ExcelInteraction="Output"
+	  ExcelUniqueKey="selectNet"
+	  Description="..\Docs\UI_xml\Param_Desc\LogDescription\MobilityLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\MobilityLog.rtf"/>
+	</Layer>
+
+	<Layer LayerName="Network Logs" LayerType="MAIN_LOGS" IncludeInNetwork="TDMA_Radio_Networks">
+		<Property scope="Local" UIType="LogCheckBox" DataType="STRING"  ConfigName="Select_Network_Logs" DisplayName="Select All" DefaultValue="False" Choices=""
+				      ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				   ExcelSheet="Select_All_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="A2"
+				  ExcelInteraction="Input"
+				  ExcelUniqueKey="selectNet" Description="..\Docs\UI_xml\Param_Desc\LogDescription\SelectAllNetworkLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\SelectAllNetworkLog.rtf" />
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="DTDMA_RADIO_MEASUREMENTS_LOG" DisplayName="DTDMA Radio Measurements Log" DefaultValue="False" Choices=""
+				      ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				   ExcelSheet="Select_All_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="P2"
+				  ExcelInteraction="Output"
+				  ExcelUniqueKey="selectNet"
+				  Description="..\Docs\UI_xml\Param_Desc\LogDescription\DTDMA-TDMARadioMeasurementLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\DTDMA-TDMARadioMeasurementLog.rtf"/>
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="TDMA_RADIO_MEASUREMENTS_LOG" DisplayName="TDMA Radio Measurements Log" DefaultValue="False" Choices=""
+				      ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				   ExcelSheet="Select_All_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="Q2"
+				  ExcelInteraction="Output"
+				  ExcelUniqueKey="selectNet"
+				  Description="..\Docs\UI_xml\Param_Desc\LogDescription\DTDMA-TDMARadioMeasurementLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\DTDMA-TDMARadioMeasurementLog.rtf"/>
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="MOBILITY_LOG" DisplayName="Mobility Log" DefaultValue="False" Choices=""
+				      ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				   ExcelSheet="Select_All_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="H2"
+				  ExcelInteraction="Output"
+				  ExcelUniqueKey="selectNet"
+			      Description="..\Docs\UI_xml\Param_Desc\LogDescription\MobilityLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\MobilityLog.rtf"/>
+	</Layer>
+
+	<Layer LayerName="Additional Logs" LayerType="ADDITIONAL_LOGS" IncludeInNetwork="TDMA_Radio_Networks">
+		<Property scope="Local" UIType="LogCheckBox" DataType="STRING"  ConfigName="Select_Add_Logs" DisplayName="Select All" DefaultValue="False" Choices=""
+				     ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				  ExcelSheet="Additional_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="A2"
+				  ExcelInteraction="Input"
+				  ExcelUniqueKey="selectNet" Description="..\Docs\UI_xml\Param_Desc\LogDescription\SelectAllAdditionalLogs.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\SelectAllAdditionalLogs.rtf" />
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="OSPF_LOG" DisplayName="OSPF Log" DefaultValue="False" Choices=""
+				      ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				  ExcelSheet="Additional_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="B2"
+				  ExcelInteraction="Output"
+				  ExcelUniqueKey="selectNet"
+				  Description="..\Docs\UI_xml\Param_Desc\LogDescription\OSPFLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\OSPFLog.rtf"/>
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="OSPF_HELLO_LOG" DisplayName="OSPF Hello Log" DefaultValue="False" Choices=""
+				     ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				  ExcelSheet="Additional_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="C2"
+				  ExcelInteraction="Output"
+				  ExcelUniqueKey="selectNet"
+				  Description="..\Docs\UI_xml\Param_Desc\LogDescription\OSPFHelloLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\OSPFHelloLog.rtf"/>
+		<Property Scope="Local" UIType="LogCheckBox" DataType="STRING" ConfigName="TCP_LOG" DisplayName="TCP Log" DefaultValue="False" Choices=""
+				     ExcelFile="..\Docs\UI_xml\Calculator\selectAll.xlsx"
+				  ExcelSheet="Additional_Logs" ExcelRow="19" ExcelColumn="10" ExcelCell="D2"
+				  ExcelInteraction="Output"
+				  ExcelUniqueKey="selectNet"
+				  Description="..\Docs\UI_xml\Param_Desc\LogDescription\TCPLog.rtf" LongDescription="..\Docs\UI_xml\Param_Desc\LogDescription\TCPLog.rtf"/>
+	</Layer>
+</MainProperty>
